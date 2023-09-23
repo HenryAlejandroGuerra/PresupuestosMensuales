@@ -4,25 +4,25 @@ Sistema para el manejo de flujo de ingresos y egresos de una persona. El sistema
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-Mira **Deployment** para conocer como desplegar el proyecto.
+Mira **Despliegue** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+Navegador web de su preferencia, algunas opciones son:
+* [Microsoft Edge](https://www.microsoft.com/es-es/edge/download)
+* [Google Chrome](https://www.google.com/intl/es_es/chrome/)
+* [Firefox](https://www.mozilla.org/es-ES/)
+* [Opera GX](https://www.opera.com/es-419/gx)
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-_Dí cómo será ese paso_
+La aplicación no requiere una instalación como ejecutable, simplemente descarga el repositorio y ejecuta lo que indica en **Despliegue**.
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+Al descargar el repositorio simplemente necesita ejecutar el archivo _index.html_ en el navegador de su preferencia.
 
 ## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
 
 * [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/download/) - El framework web usado
 

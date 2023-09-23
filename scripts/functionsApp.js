@@ -52,12 +52,14 @@ $(document).ready(function () {
             ingresos.push(transaccion);
             const listaIngresos = document.getElementById('listaIngresos');
             const li = document.createElement('li');
+            li.className = 'list-group-item';
             li.textContent = `${descripcion}: $${monto.toFixed(2)}`;
             listaIngresos.appendChild(li);
         } else {
             egresos.push(transaccion);
             const listaEgresos = document.getElementById('listaEgresos');
             const li = document.createElement('li');
+            li.className = 'list-group-item';
             li.textContent = `${descripcion}: $${monto.toFixed(2)} (${(monto * 100 / calcularMontoTotal()).toFixed(2)}%)`;
             listaEgresos.appendChild(li);
         }
