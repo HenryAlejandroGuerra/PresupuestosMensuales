@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Sistema de Presupuestos Mensuales</title>
-  <link rel="stylesheet" href="styles.css">
+  <link type="text/css" href="css/css/bootstrap.min.css" rel="stylesheet"/>
+  <script type="text/javascript" src="css/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="scripts/functionsApp.js"></script>
 </head>
 <body>
-  <!-- Contenido de la página -->
-  
-  <script src="script.js"></script>
+
+  <br>
+  <div class="container text-center p-3 my-3">
+    
+    <!-- Primer cuadro con resumen y título -->
+    <div class="row">
+      <div class="col pt-3 border text-center">
+        <h2 id="tituloPresupuesto"></h2>
+        <br>
+        <h2 id="ganancia"></h2>
+        <br><br>
+        <div class="row">
+          <div class="col p-3 my-3 bg-dark text-white">
+            <h3 id="ingresos"></h3>
+          </div>
+          <div class="col p-3 my-3 bg-primary text-white">
+            <h3 id="egresos"></h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <h4 id="porcentajeGastos"></h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segundo cuadro con la lógica del presupuesto mensual -->
+    <div class="row">
+      <!-- Cuadro Transacciones -->
+      <div class="col pt-3 border">
+        <h3 id="tituloTransaccion">Transacción</h3>
+        <form id="formulario">
+          <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <select class="form-control" id="tipo">
+              <option value="ingreso">Ingreso</option>
+              <option value="egreso">Egreso</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" class="form-control" id="descripcion">
+          </div>
+          <div class="form-group">
+            <label for="monto">Monto:</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="number" class="form-control" id="monto">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+        <br><br>
+      </div>
+      <!-- Cuadro Registros -->
+      <div class="col pt-3 border">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#tabIngresos">Ingresos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tabEgresos">Egresos</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="tabIngresos" class="container tab-pane active"><br>
+            <h3>INGRESOS</h3>
+            <ul class="list-group" id="listaIngresos">
+            </ul>
+          </div>
+          <div id="tabEgresos" class="container tab-pane fade"><br>
+            <h3>EGRESOS</h3>
+            <ul class="list-group" id="listaEgresos">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
